@@ -1,0 +1,95 @@
+<html>
+    <head>
+	<script src="cards.js"></script>
+	<script src="slider.js"></script>
+	<script src="stocks.js"></script>
+	<link rel="stylesheet" type="text/css" href="stocks.css">
+	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+	<link rel="shortcut icon" href="../images/stocksandbonds.ico" type="image/x-icon" />
+	<title>Stocks & Bonds</title>
+    </head>
+    <body style="margin-left: 25px;">
+	<h3 style="font-family: Raleway;">Stocks & Bonds</h3>
+	<input type="hidden" name="year" id="year" value="0"/>
+	<input type="hidden" name="entered" id="entered" value="0"/>
+	<input type="hidden" name="numstocks" id="numstocks" value="9"/>
+	<table id="stockboard">
+	    <tr>
+		<th class="stockheader">Stocks</th>
+	    </tr>
+	    <tr>
+		<td class="stockname">
+		    <span id="stockname_1">Central City Bonds</span><br />
+		    <div class="yieldstyle">YIELD 5%</div>
+		    <input type="hidden" value="100" id="value_0_1"/>
+		</td>
+	    </tr>
+	    <tr>
+		<td class="stockname" style="background-color: lightgray;">
+		    <span id="stockname_2">Growth Corp</span><br />
+		    <div class="yieldstyle">YIELD 1%</div>
+		    <input type="hidden" value="100" id="value_0_2"/>
+		</td>
+	    </tr>
+	    <tr>
+		<td class="stockname">
+		    <span id="stockname_3">Metro Prop</span><br />
+		    <div class="yieldstyle">NO YIELD</div>
+		    <input type="hidden" value="100" id="value_0_3"/>
+		</td>
+	    </tr>
+	    <tr>
+		<td class="stockname" style="background-color: lightgray;">
+		    <span id="stockname_4">Pioneer Mutl</span><br />
+		    <div class="yieldstyle">YIELD 4%</div>
+		    <input type="hidden" value="100" id="value_0_4"/>
+		</td>
+	    </tr>
+	    <tr>
+		<td class="stockname">
+		    <span id="stockname_5">Shady Brooks</span><br />
+		    <div class="yieldstyle">YIELD 7%</div>
+		    <input type="hidden" value="100" id="value_0_5"/>
+		</td>
+	    </tr>
+	    <tr>
+		<td class="stockname" style="background-color: lightgray;">
+		    <span id="stockname_6">Stryker Drlg</span><br />
+		    <div class="yieldstyle">NO YIELD</div>
+		    <input type="hidden" value="100" id="value_0_6"/>
+		</td>
+	    </tr>
+	    <tr>
+		<td class="stockname">
+		    <span id="stockname_7">Tri City Trans</span><br />
+		    <div class="yieldstyle">NO YIELD</div>
+		    <input type="hidden" value="100" id="value_0_7"/>
+		</td>
+	    </tr>
+	    <tr>
+		<td class="stockname" style="background-color: lightgray;">
+		    <span id="stockname_8">United Auto</span><br />
+		    <div class="yieldstyle">YIELD 2%</div>
+		    <input type="hidden" value="100" id="value_0_8"/>
+		</td>
+	    </tr>
+	    <tr>
+		<td class="stockname">
+		    <span id="stockname_9">Uranium Ent</span><br />
+		    <div class="yieldstyle">YIELD 6%</div>
+		    <input type="hidden" value="100" id="value_0_9"/>
+		</td>
+	    </tr>
+	    <tr>
+		<td class="stockname" style="background-color: lightgray;">
+		    <span id="stockname_10">Valley Power</span><br />
+		    <div class="yieldstyle">YIELD 3%</div>
+		    <input type="hidden" value="100" id="value_0_10"/>
+		</td>
+	    </tr>
+	</table><br />
+	<span id="buttonarea"><button class="button" id="startgamebutton" onclick="addYear();">Start Game</button></span><br />
+	<br>
+	<span id="carddetails"></span>
+    </body>
+</html>
